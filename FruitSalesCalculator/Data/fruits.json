@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Apple",
+        "basePrice": 2.00,
+        "pricingMethod": "PerKg"
+    },
+    {
+        "name": "Banana",
+        "basePrice": 0.30,
+        "pricingMethod": "PerItem"
+    },
+    {
+        "name": "Cherry",
+        "basePrice": 5.00,
+        "pricingMethod": "PerKg",
+        "discountThreshold": 2.0,
+        "discountPercentage": 10
+    },
+    {
+        "name": "Orange",
+        "basePrice": 3.50,
+        "pricingMethod": "PerKg"
+    },
+    {
+        "name": "Strawberry",
+        "basePrice": 8.00,
+        "pricingMethod": "PerKg",
+        "discountThreshold": 1.5,
+        "discountPercentage": 15
+    }
+]
