@@ -6,7 +6,7 @@ namespace FruitSalesCalculator.Models
 {
     public class FreshProduce
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         public decimal BasePrice { get; set; }
         public PricingMethod PricingMethod { get; set; }
         public decimal? DiscountThreshold { get; set; }

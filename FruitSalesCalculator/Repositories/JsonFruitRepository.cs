@@ -15,7 +15,7 @@ namespace FruitSalesCalculator.Repositories
 
             _jsonFilePath = jsonFilePath;
         }
-        public List<FreshProduce> GetAll()
+        public IReadOnlyList<FreshProduce> GetAll()
         {
             if (!File.Exists(_jsonFilePath))
                 throw new FileNotFoundException($"Fruit data file not found at '{_jsonFilePath}'.", _jsonFilePath);

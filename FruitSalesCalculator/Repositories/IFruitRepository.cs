@@ -7,6 +7,6 @@ namespace FruitSalesCalculator.Repositories
 {
     public interface IFruitRepository
     {
-      List<FreshProduce> GetAll();
+      IReadOnlyList<FreshProduce> GetAll();
     }
 }
