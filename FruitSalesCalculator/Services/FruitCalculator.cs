@@ -1,19 +1,14 @@
 ﻿using FruitSalesCalculator.Models;
 using FruitSalesCalculator.Pricing;
-using FruitSalesCalculator.Repositories;
 
 namespace FruitSalesCalculator.PricingService
 {
     public class FruitCalculator
     {
-        private readonly IFruitRepository _repository;
- 
-        public FruitCalculator(IFruitRepository repository)
+        public FruitCalculator()
         {
-            _repository = repository;
+            
         }
-
-        public IReadOnlyList<FreshProduce> GetFruits() => _repository.GetAll();
 
         public decimal CalculatePrice(FreshProduce fruit, decimal quantity)
         {

@@ -3,9 +3,9 @@ using FruitSalesCalculator.PricingService;
 using Spectre.Console;
 
 var repository = new FruitSalesCalculator.Repositories.JsonFruitRepository("Data/fruits.json");
-var calculator = new FruitCalculator(repository);
+var calculator = new FruitCalculator();
 
-var fruit = calculator.GetFruits();
+var fruit = repository.GetAll();
 
 if (fruit.Count == 0)
 {

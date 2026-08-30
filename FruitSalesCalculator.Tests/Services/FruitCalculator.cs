@@ -1,4 +1,5 @@
 ﻿using FruitSalesCalculator.Models;
+using FruitSalesCalculator.Pricing;
 using FruitSalesCalculator.PricingService;
 using FruitSalesCalculator.Repositories;
 
@@ -28,7 +29,7 @@ namespace FruitSalesCalculator.Tests.PricingService
             };
 
             var repository = new MockFruitRepository(new List<FreshProduce> { fruit });
-            var calculator = new FruitCalculator(repository);
+            var calculator = new FruitCalculator();
 
             // Act
             var result = calculator.CalculatePrice(fruit, 3m);
@@ -51,7 +52,7 @@ namespace FruitSalesCalculator.Tests.PricingService
             };
 
             var repository = new MockFruitRepository(new List<FreshProduce> { fruit });
-            var calculator = new FruitCalculator(repository);
+            var calculator = new FruitCalculator();
 
             // Act
             var result = calculator.CalculatePrice(fruit, 3m);
@@ -75,8 +76,8 @@ namespace FruitSalesCalculator.Tests.PricingService
             };
 
             var repository = new MockFruitRepository(new List<FreshProduce> { fruit });
-            var calculator = new FruitCalculator(repository);
-
+            var calculator = new FruitCalculator();      
+                    
             // Act
             var result = calculator.CalculatePrice(fruit, 1.5m);
 
@@ -97,7 +98,7 @@ namespace FruitSalesCalculator.Tests.PricingService
             };
 
             var repository = new MockFruitRepository(new List<FreshProduce> { fruit });
-            var calculator = new FruitCalculator(repository);
+            var calculator = new FruitCalculator();
 
             // Act
             var result = calculator.CalculatePrice(fruit, 5m);
@@ -123,7 +124,7 @@ namespace FruitSalesCalculator.Tests.PricingService
             };
 
             var repository = new MockFruitRepository(new List<FreshProduce> { fruit });
-            var calculator = new FruitCalculator(repository);
+            var calculator = new FruitCalculator();
 
             // Act
             var result = calculator.CalculatePrice(fruit, quantity);
