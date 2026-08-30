@@ -9,12 +9,12 @@ namespace FruitSalesCalculator.Tests.PricingService
     {
         private class MockFruitRepository : IFruitRepository
         {
-            private readonly List<FreshProduce> _fruits;
+            private readonly IReadOnlyList<FreshProduce> _fruits;
             public MockFruitRepository(List<FreshProduce> fruits)
             {
                 _fruits = fruits;
             }
-            public List<FreshProduce> GetAll() => _fruits;
+            public IReadOnlyList<FreshProduce> GetAll() => _fruits;
         }
 
         [Fact]
